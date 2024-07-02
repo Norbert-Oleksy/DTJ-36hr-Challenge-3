@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75537ff517ce354c97a412e553fa47a, type: 3}
+  m_Name: TestModulesList
+  m_EditorClassIdentifier: 
+  basic:
+  - {fileID: 1901892126018747065, guid: 59ba0ef81eeb4974eb9ce1734c940fd6, type: 3}
+  impediments:
+  - {fileID: 4352694294330533627, guid: dc6b64b9744ff8748a2b212f2e11916d, type: 3}
+  - {fileID: 4352694294330533627, guid: dc6b64b9744ff8748a2b212f2e11916d, type: 3}
+  hardModules:
+  - {fileID: 1901892126018747065, guid: 59ba0ef81eeb4974eb9ce1734c940fd6, type: 3}
