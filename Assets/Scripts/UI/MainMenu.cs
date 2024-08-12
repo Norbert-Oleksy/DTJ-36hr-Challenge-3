@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    /*
+     * Old Scripot
+     * PhoneMenu is new
+     * 
+     */
     [SerializeField]  private GameObject mainMenu;
     [SerializeField]  private GameObject dificultyMenu;
 

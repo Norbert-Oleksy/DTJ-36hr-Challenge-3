@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c92fc1f4ed35c56489695d8a45403f39, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   hlg: {fileID: 229976390447644963}
-  speed: 20
+  speed: 40
 --- !u!114 &1354650432444775437
 MonoBehaviour:
   m_ObjectHideFlags: 0

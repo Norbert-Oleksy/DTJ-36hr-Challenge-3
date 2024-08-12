@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringLocalizationTable_pl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: e77bd0de750f00447be3b0196175f9a9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 583083458560
+    m_Localized: Polski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5180267134976
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 muzyki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5226245095424
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 gry"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8844897648640
+    m_Localized: Cofnij
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9433706627072
+    m_Localized: Graj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9494524035072
+    m_Localized: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9706307026944
+    m_Localized: "\u0141atwy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12164752179200
+    m_Localized: Normalny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12333539360768
+    m_Localized: Trudny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13045732179968
+    m_Localized: "Wzn\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13258320478208
+    m_Localized: Restert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13572863918080
+    m_Localized: "Wyj\u015Bcie"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

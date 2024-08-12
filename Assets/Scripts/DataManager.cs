@@ -22,7 +22,7 @@ public class DataManager : MonoBehaviour
     #endregion
 
     #region DataRegion
-    public int difficulty;
+    public int difficulty; // 1 - easy, 2 - normal, 3 - hard
     public float soundLevel;
     public float musicLevel;
     #endregion

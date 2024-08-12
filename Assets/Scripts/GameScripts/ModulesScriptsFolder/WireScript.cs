@@ -8,15 +8,16 @@ public class WireScript : MonoBehaviour
     private WiresModule parent;
     [SerializeField] private Image img;
     [SerializeField] private Button btn;
-    public void Initialization(WiresModule p)
+    public void Initialization(WiresModule p, Color c)
     {
         parent = p;
+        img.color = c;
     }
 
     public void Logic()
     {
-        img.color = Color.green;
+        if (GameManager.instance.stage != GameManager.gamestage.Game) return;
         btn.interactable = false;
-        parent.CheckWires();
+        parent.CheckWires(this);
     }
 }
