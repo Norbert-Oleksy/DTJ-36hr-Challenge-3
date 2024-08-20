@@ -63,6 +63,34 @@ MonoBehaviour:
     m_Key: BTN_Exit
     m_Metadata:
       m_Items: []
+  - m_Id: 5523123029639168
+    m_Key: MIID_PushUP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5523297961476096
+    m_Key: MIID_TwoBalls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5523362641838080
+    m_Key: MIID_Wires
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6887842923642880
+    m_Key: MIID_Empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6938405359026176
+    m_Key: BTN_Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7645999522349056
+    m_Key: Game_Status_Win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7646044439150592
+    m_Key: Game_Status_Lose
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

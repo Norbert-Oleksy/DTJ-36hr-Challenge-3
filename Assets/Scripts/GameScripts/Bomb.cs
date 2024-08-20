@@ -108,6 +108,11 @@ public class Bomb : MonoBehaviour
                 return 1;
         }
     }
+
+    public string ReturnModuleInfoID(int position)
+    {
+        return moduleSlots[position].GetComponent<Module>().moduleInfoID;
+    }
     #endregion
 
     #region Unity-API

@@ -163,6 +163,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3399015031854764009, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399015031854764009, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3499072916735840682, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -187,6 +195,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5169519414556626809, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5482455546150776622, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -208,6 +220,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5482455546150776622, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896005370836329015, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896005370836329015, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896005370836329015, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896005370836329015, guid: 7a5dabb686fa55f4facada841b260c4c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

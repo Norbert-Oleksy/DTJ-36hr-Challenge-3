@@ -206,5 +206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  moduleInfoID: MIID_Wires
   wirePrefab: {fileID: 50496304579243970, guid: 51e05efcecef3d14a90763bff2bbf573, type: 3}
   wiresSection: {fileID: 644425748533949068}

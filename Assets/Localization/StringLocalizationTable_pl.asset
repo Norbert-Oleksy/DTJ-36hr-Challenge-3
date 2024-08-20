@@ -66,6 +66,18 @@ MonoBehaviour:
     m_Localized: "Wyj\u015Bcie"
     m_Metadata:
       m_Items: []
+  - m_Id: 6938405359026176
+    m_Localized: Informacje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7645999522349056
+    m_Localized: Dobra robota!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7646044439150592
+    m_Localized: "Powodzenia nast\u0119pnym razem :P"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

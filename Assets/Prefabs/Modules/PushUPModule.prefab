@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  moduleInfoID: MIID_PushUP
   progresBar: {fileID: 7374597581638672980}
   slider: {fileID: 1978832593211730009}
   orangeColor: {r: 1, g: 0.6116453, b: 0, a: 0}

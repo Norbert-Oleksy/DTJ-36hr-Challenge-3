@@ -5,6 +5,7 @@ using UnityEngine;
 public class Module : MonoBehaviour
 {
     public bool active = false;
+    public string moduleInfoID;
 
     public List<T> ShuffleList<T>(List<T> ts)
     {
