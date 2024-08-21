@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
@@ -38,6 +39,7 @@ public class PhoneMenu : MonoBehaviour
         {
             animator.Play("UnFlipAPhone");
             setingsMenu.SetActive(false);
+            DataManager.instance.SaveData();
         }
         
         StartCoroutine(DoAfterDelay(() => {
@@ -101,5 +103,10 @@ public class PhoneMenu : MonoBehaviour
                 OpenCloseInfoMenu(false);
             }
         }
+    }
+
+    private void Awake()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[DataManager.instance.languageId];
     }
 }
