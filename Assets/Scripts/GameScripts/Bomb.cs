@@ -11,7 +11,9 @@ public class Bomb : MonoBehaviour
     #endregion
     #region Fields
     [Header("Timer")]
-    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI timerTextS;
+    [SerializeField] private TextMeshProUGUI timerTextMS;
+    [SerializeField] private TextMeshProUGUI charText;
     [Space]
     [Header("Bomb")]
     [SerializeField] private List<GameObject> moduleSlots;
@@ -30,12 +32,29 @@ public class Bomb : MonoBehaviour
     private void TimerLogic()
     {
         timeLeft-=Time.deltaTime;
-        if (timeLeft <= 30.0f && timeLeft > 10.0f && timerText.color != Color.yellow) timerText.color = Color.yellow;
-        if (timeLeft <= 10.0f && timerText.color != Color.red) timerText.color = Color.red;
+        if (timeLeft <= 30.0f && timeLeft > 10.0f && timerTextS.color != Color.yellow)
+        {
+            timerTextS.color = Color.yellow;
+            timerTextMS.color = Color.yellow;
+            charText.color = Color.yellow;
+        }
+        else if (timeLeft <= 10.0f && timerTextS.color != Color.red)
+        {
+            timerTextS.color = Color.red;
+            timerTextMS.color = Color.red;
+            charText.color = Color.red;
+        }
 
-        timerText.text = string.Format("{0:0}:{1:00}", (int)timeLeft, (int)((timeLeft - (int)timeLeft)*100));
-        
+        //timerText.text = string.Format("{0:00}:{1:00}", (int)timeLeft, (int)((timeLeft - (int)timeLeft)*100));
+        timerTextS.text = AddZeroIfBelowTen((int)timeLeft);
+        timerTextMS.text = AddZeroIfBelowTen((int)((timeLeft - (int)timeLeft) * 100));
         if (timeLeft <= 0f) Detonate();
+    }
+
+    private string AddZeroIfBelowTen(int value)
+    {
+        if (value < 10) return "0" + value.ToString();
+        return value.ToString();
     }
 
     public void CheckIfBombIsDefused()
@@ -56,7 +75,9 @@ public class Bomb : MonoBehaviour
     {
         if (instance != null && instance != this) return;
         instance = this;
-        timerText.text = string.Format("{0:0}:{1:00}", 60,0);
+        //timerTextS.text = string.Format("{0:0}:{1:00}", 60,0);
+        timerTextS.text = "60";
+        timerTextMS.text = "00";
         modules = new List<Module>();
         int numberOfModules = GetNumberOfModules();
         if (numberOfModules >= 5) {
