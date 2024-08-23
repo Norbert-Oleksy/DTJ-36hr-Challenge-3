@@ -59,7 +59,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13258320478208
-    m_Localized: Restert
+    m_Localized: Reset
     m_Metadata:
       m_Items: []
   - m_Id: 13572863918080
@@ -76,6 +76,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7646044439150592
     m_Localized: "Powodzenia nast\u0119pnym razem :P"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8683575960109056
+    m_Localized: "G\u0142\xF3wne Menu"
     m_Metadata:
       m_Items: []
   references:
