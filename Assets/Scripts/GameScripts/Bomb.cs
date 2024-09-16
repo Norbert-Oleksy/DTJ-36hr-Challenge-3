@@ -75,7 +75,6 @@ public class Bomb : MonoBehaviour
     {
         if (instance != null && instance != this) return;
         instance = this;
-        //timerTextS.text = string.Format("{0:0}:{1:00}", 60,0);
         timerTextS.text = "60";
         timerTextMS.text = "00";
         modules = new List<Module>();
@@ -103,7 +102,7 @@ public class Bomb : MonoBehaviour
 
     private void PlaceModule(GameObject md)
     {
-        var slot = moduleSlots[Random.Range(0, moduleSlots.Count - 1)];
+        var slot = moduleSlots[Random.Range(0, moduleSlots.Count)];
         moduleSlots.Remove(slot);
         slot.GetComponent<Image>().enabled = false;
 
@@ -120,11 +119,11 @@ public class Bomb : MonoBehaviour
         switch (DataManager.instance.difficulty)
         {
             case 1:
-                return Random.Range(1,2);
+                return Random.Range(1,3);
             case 2:
-                return Random.Range(3, 4);
+                return Random.Range(3, 5);
             case 3: 
-                return Random.Range(5, 6);
+                return Random.Range(5, 7);
             default:
                 return 1;
         }
