@@ -167,6 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c255fc49c10a843a22b793aa938bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 0
+  soundLevel: 0
+  musicLevel: 0
+  languageId: 0
 --- !u!1 &443912121
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataManager: {fileID: 70320825}
-  introTime: 0
+  introTime: 2
 --- !u!1 &1913188874
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.54999626, g: 0.9433962, b: 0.4405482, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Bomb : MonoBehaviour
 {
@@ -78,10 +79,11 @@ public class Bomb : MonoBehaviour
         timerTextS.text = "60";
         timerTextMS.text = "00";
         modules = new List<Module>();
+        List<GameObject> slots = new List<GameObject>(moduleSlots);
         int numberOfModules = GetNumberOfModules();
         if (numberOfModules >= 5) {
             numberOfModules--;
-            PlaceModule(modulesList.hardModules[Random.Range(0, modulesList.hardModules.Count)]);
+            PlaceModule(modulesList.hardModules[Random.Range(0, modulesList.hardModules.Count)], slots);
         }
 
         if(numberOfModules >= 3)
@@ -90,20 +92,20 @@ public class Bomb : MonoBehaviour
             numberOfModules -= variable;
             for(int i = 0; i < variable; i++) 
             {
-                PlaceModule(modulesList.impediments[Random.Range(0, modulesList.impediments.Count)]);
+                PlaceModule(modulesList.impediments[Random.Range(0, modulesList.impediments.Count)], slots);
             }
         }
 
         for (int i = 0; i < numberOfModules; i++) {
-            PlaceModule(modulesList.basic[Random.Range(0, modulesList.basic.Count)]);
+            PlaceModule(modulesList.basic[Random.Range(0, modulesList.basic.Count)], slots);
         }
         GameManager.instance.stage = GameManager.gamestage.Game;
     }
 
-    private void PlaceModule(GameObject md)
+    private void PlaceModule(GameObject md, List<GameObject> slots)
     {
-        var slot = moduleSlots[Random.Range(0, moduleSlots.Count)];
-        moduleSlots.Remove(slot);
+        var slot = slots[Random.Range(0, slots.Count)];
+        slots.Remove(slot);
         slot.GetComponent<Image>().enabled = false;
 
         GameObject newObject = Instantiate(md, Vector3.zero, Quaternion.identity);
@@ -131,7 +133,8 @@ public class Bomb : MonoBehaviour
 
     public string ReturnModuleInfoID(int position)
     {
-        return moduleSlots[position].GetComponent<Module>().moduleInfoID;
+        Module module = moduleSlots[position].GetComponentInChildren<Module>();
+        return module!=null? module.moduleInfoID : "";
     }
     #endregion
 

@@ -13,10 +13,12 @@ public class Phone : MonoBehaviour
     [SerializeField] GameObject msgPrefab;
     [SerializeField] GameObject modulesBtnSection;
     [SerializeField] Scrollbar scrollbar;
+    [SerializeField] Image scanBtnImage;
     #endregion
 
     #region Variables
     private bool isScanModeOn=false;
+    private Color defaultScanBtnColor;
     #endregion
 
     #region Functions
@@ -25,8 +27,10 @@ public class Phone : MonoBehaviour
     {
         GameObject msg = Instantiate(msgPrefab);
         msg.transform.SetParent(msgContent, false);
-        LocalizeStringEvent lseMsg = msg.GetComponent<LocalizeStringEvent>();
-        lseMsg.SetEntry(Bomb.instance.ReturnModuleInfoID(id));
+        LocalizeStringEvent lseMsg = msg.GetComponentInChildren<LocalizeStringEvent>();
+        string stringID = Bomb.instance.ReturnModuleInfoID(id);
+        if (stringID == "") stringID = "MIID_Empty";
+        lseMsg.SetEntry(stringID);
         lseMsg.RefreshString();
    
         scrollbar.value = 0;
@@ -36,7 +40,7 @@ public class Phone : MonoBehaviour
     {
         GameObject msg = Instantiate(msgPrefab);
         msg.transform.SetParent(msgContent, false);
-        LocalizeStringEvent lseMsg = msg.GetComponent<LocalizeStringEvent>();
+        LocalizeStringEvent lseMsg = msg.GetComponentInChildren<LocalizeStringEvent>();
         lseMsg.SetEntry("");
         lseMsg.RefreshString();
         scrollbar.value = 0;
@@ -44,24 +48,17 @@ public class Phone : MonoBehaviour
 
     public void TurnOnOffScanMode()
     {
-        if(isScanModeOn)
-        {
-            modulesBtnSection.SetActive(false);
-        }
-        else
-        {
-            modulesBtnSection.SetActive(true);
-        }
         isScanModeOn = !isScanModeOn;
+        modulesBtnSection.SetActive(isScanModeOn);
+        scanBtnImage.color = isScanModeOn? Color.red : defaultScanBtnColor;
     }
 
     #endregion
 
     #region Unity-Api
-    private void Update()
+    private void Awake()
     {
-        if (GameManager.instance.stage != GameManager.gamestage.Game) return;
-        if (isScanModeOn && Input.GetKeyDown(KeyCode.Escape)) TurnOnOffScanMode();
+        defaultScanBtnColor = scanBtnImage.color;
     }
     #endregion
 }

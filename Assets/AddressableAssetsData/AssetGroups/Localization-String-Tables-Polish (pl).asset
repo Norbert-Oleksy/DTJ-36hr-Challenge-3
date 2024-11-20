@@ -23,6 +23,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pl
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c08fe4c7d29c04740b14bb9e669d1449
+    m_Address: PhoneStringsTableCollection_pl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pl
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d1383ad1e490a0847b43c5a212c4f032, type: 2}
   m_SchemaSet:
