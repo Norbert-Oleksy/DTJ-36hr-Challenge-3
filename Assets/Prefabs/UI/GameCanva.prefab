@@ -2141,7 +2141,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 425, y: 93.34}
+  m_SizeDelta: {x: 425, y: 0}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1159651602216158869
 MonoBehaviour:
@@ -4074,6 +4074,60 @@ MonoBehaviour:
   optionsMenu: {fileID: 4412379257538010401}
   blockRaycasts: {fileID: 6141811321695481956}
   animator: {fileID: 2865056541952482335}
+  onPause:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4007456877361883504}
+        m_TargetAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+        m_MethodName: set_alpha
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1159651602216158869}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onResume:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4007456877361883504}
+        m_TargetAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+        m_MethodName: set_alpha
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1159651602216158869}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!95 &2865056541952482335
 Animator:
   serializedVersion: 5
@@ -4204,9 +4258,9 @@ RectTransform:
   - {fileID: 6707850883839079395}
   m_Father: {fileID: 7594703453759340585}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 319.5, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 213, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1957732971184204328
@@ -4299,7 +4353,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -5926,13 +5980,14 @@ GameObject:
   - component: {fileID: 3313452780091318348}
   - component: {fileID: 4995889149714813181}
   - component: {fileID: 343951517958482139}
+  - component: {fileID: 4007456877361883504}
   m_Layer: 5
   m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3313452780091318348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5982,6 +6037,18 @@ MonoBehaviour:
   modulesBtnSection: {fileID: 2646516615146381258}
   scrollbar: {fileID: 1776418501664073775}
   scanBtnImage: {fileID: 1910865692134204276}
+--- !u!225 &4007456877361883504
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5332765364257645805}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &5333382001519943076
 GameObject:
   m_ObjectHideFlags: 0
@@ -9267,9 +9334,9 @@ RectTransform:
   - {fileID: 8405576973168539250}
   m_Father: {fileID: 7594703453759340585}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 106.5, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 213, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7770466366851523117
@@ -9782,7 +9849,7 @@ RectTransform:
   m_Father: {fileID: 4831199127947942236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10974,7 +11041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 642029817731076264, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 88.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 642029817731076264, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11030,27 +11097,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 230.94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 68.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 125.47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -44.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4928889210301336078, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_StringReference.m_TableEntryReference.m_KeyId

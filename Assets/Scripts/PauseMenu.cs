@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
@@ -10,6 +11,11 @@ public class PauseMenu : MonoBehaviour
     #region Fields
     [SerializeField] private GameObject pauseOBJ,phoneImage,optionsMenu,blockRaycasts;
     [SerializeField] private Animator animator;
+    #endregion
+
+    #region Events
+    [SerializeField] private UnityEvent onPause;
+    [SerializeField] private UnityEvent onResume;
     #endregion
 
     #region Variables
@@ -23,6 +29,7 @@ public class PauseMenu : MonoBehaviour
         pauseOBJ.SetActive(true);
         phoneImage.SetActive(true);
         blockRaycasts.SetActive(true);
+        onPause?.Invoke();
     }
 
     public void ResumeTheGame()
@@ -31,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         pauseOBJ.SetActive(false);
         phoneImage.SetActive(false);
         blockRaycasts.SetActive(false);
+        onResume?.Invoke();
     }
 
     public void GameRestert()
