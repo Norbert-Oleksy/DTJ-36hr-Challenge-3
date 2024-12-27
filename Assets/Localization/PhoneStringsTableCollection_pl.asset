@@ -27,23 +27,29 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 757692334080
-    m_Localized: ' '
+    m_Localized: "Pusty slot na modu\u0142."
     m_Metadata:
       m_Items: []
   - m_Id: 750922727424
-    m_Localized: ' '
+    m_Localized: "Standardowy modu\u0142 zasilaj\u0105cy\nDosy\u0107 powszechny w
+      ostatnim czasie.\nTnij zgodnie z kolejno\u015Bci\u0105 kolor\xF3w t\u0119czy."
     m_Metadata:
       m_Items: []
   - m_Id: 747303043072
-    m_Localized: ' '
+    m_Localized: "Wygl\u0105da to na niestandardowy zapalnik.\nz op\xF3\u017Anieniem.
+      Te dwie kulki s\u0105 wykonane\nz reaktywnej substancji.\nGdy si\u0119 zetkn\u0105,
+      dojdzie do eksplozji."
     m_Metadata:
       m_Items: []
   - m_Id: 361255108608
-    m_Localized: ' '
+    m_Localized: "Ci\u015Bnieniowy Bezpiecznik Wysokiego Napi\u0119cia\nWska\u017Anik
+      pokazuje, \u017Ce uk\u0142ad jest wy\u0142\u0105czony.\nU\u017Cyj d\u017Awigni,
+      aby napompowa\u0107 uk\u0142ad.\nGdy osi\u0105gniesz odpowiednie ci\u015Bnienie,\nbezpiecznik
+      si\u0119 w\u0142\u0105czy."
     m_Metadata:
       m_Items: []
   - m_Id: 68139794268160
-    m_Localized: "Witaj w aplikacji DET\nCieszymy si\u0119, \u017Ce mo\u017Cemy\nci
+    m_Localized: "Witaj w aplikacji DET.\nCieszymy si\u0119, \u017Ce mo\u017Cemy\nci
       s\u0142u\u017Cy\u0107 pomoc\u0105!"
     m_Metadata:
       m_Items: []

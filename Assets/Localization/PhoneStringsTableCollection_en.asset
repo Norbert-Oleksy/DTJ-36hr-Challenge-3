@@ -27,23 +27,44 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 361255108608
-    m_Localized: ' '
+    m_Localized: 'High Voltage Pressure  Fuse
+
+      Indicator shows that it is switched
+      off.
+
+      Use the lever to re-pressurize the system.
+
+      Once the correct
+      pressure is reached,
+
+      the fuse will activate.'
     m_Metadata:
       m_Items: []
   - m_Id: 747303043072
-    m_Localized: ' '
+    m_Localized: 'This appears to be a custom delayed fuse.
+
+      The two balls
+      are made of a reactive substance.
+
+      When they come into contact, they
+      explode.'
     m_Metadata:
       m_Items: []
   - m_Id: 750922727424
-    m_Localized: ' '
+    m_Localized: 'Standard power supply module
+
+      Quite common in recent times.
+
+      Cut
+      in the order of the colours of the rainbow.'
     m_Metadata:
       m_Items: []
   - m_Id: 757692334080
-    m_Localized: ' '
+    m_Localized: Empty module slot
     m_Metadata:
       m_Items: []
   - m_Id: 68139794268160
-    m_Localized: 'Welcome to the DET app
+    m_Localized: 'Welcome to the DET app.
 
       We are happy to be of service
 
