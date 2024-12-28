@@ -41,7 +41,7 @@ public class Phone : MonoBehaviour
         GameObject msg = Instantiate(msgPrefab);
         msg.transform.SetParent(msgContent, false);
         LocalizeStringEvent lseMsg = msg.GetComponentInChildren<LocalizeStringEvent>();
-        lseMsg.SetEntry("");
+        lseMsg.SetEntry("MSG_FF-" + Random.Range(1, 11));
         lseMsg.RefreshString();
         scrollbar.value = 0;
     }

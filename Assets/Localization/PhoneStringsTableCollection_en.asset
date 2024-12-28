@@ -64,12 +64,99 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 68139794268160
-    m_Localized: 'Welcome to the DET app.
+    m_Localized: 'Welcome to the DET app
 
       We are happy to be of service
 
       to
       you!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36287930401783808
+    m_Localized: 'DET
+
+      Serving since 1980'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289308486500352
+    m_Localized: 'Don''t worry.
+
+      Even if you make a mistake,
+
+      we will
+      be there to clean up after you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289333329362944
+    m_Localized: 'Why 60 seconds?
+
+      The research points to one thing:
+
+      It''s
+      not enough time to escape,
+
+      but enough to try.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289345530593280
+    m_Localized: 'DET: Guardians of public safety
+
+      Our reliability has enabled
+      us to disarm
+
+      63% of all reported explosives.
+
+      explosives.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289357803126784
+    m_Localized: 'The most important thing is to stay calm.
+
+      You have a 50/50
+      chance of success.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289373397549056
+    m_Localized: 'TIC TAC TIC TAC
+
+      TIC TAC TIC TAC
+
+      TIC TAC TIC TAC'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289387196809216
+    m_Localized: 'Are you sure you now have time
+
+      for trivia? There''s a real
+
+      bomb
+      next to you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289399184130048
+    m_Localized: 'The bomb has been defused.
+
+      DET win.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289413285380096
+    m_Localized: 'Several years ago, when the attacks were over,
+
+      some people
+      wanted to dissolve DET, treating
+
+      us as no longer needed. They were wrong.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289428724613120
+    m_Localized: 'Remember!
+
+      DET is by your side,
+
+      DET supports you,
+
+      DET
+      is a hero.'
     m_Metadata:
       m_Items: []
   references:

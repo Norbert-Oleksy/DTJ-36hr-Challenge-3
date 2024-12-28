@@ -49,8 +49,63 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 68139794268160
-    m_Localized: "Witaj w aplikacji DET.\nCieszymy si\u0119, \u017Ce mo\u017Cemy\nci
+    m_Localized: "Witaj w aplikacji DET\nCieszymy si\u0119, \u017Ce mo\u017Cemy\nci
       s\u0142u\u017Cy\u0107 pomoc\u0105!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36287930401783808
+    m_Localized: 'DET
+
+      Razem od 1980'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289308486500352
+    m_Localized: "Nie martw si\u0119.\nNawet je\u015Bli pope\u0142nisz b\u0142\u0105d,\nb\u0119dziemy
+      tam, by po tobie posprz\u0105ta\u0107."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289333329362944
+    m_Localized: "Dlaczego 60 sekund?\nBadania wskazuj\u0105 na jedno:\nto za ma\u0142o
+      czasu, by uciec,\nale wystarczaj\u0105co, by spr\xF3bowa\u0107."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289345530593280
+    m_Localized: "DET: Stra\u017Cnicy bezpiecze\u0144stwa publicznego\nDzi\u0119ki
+      naszej niezawodno\u015Bci uda\u0142o si\u0119 rozbroi\u0107\na\u017C 63% wszystkich
+      zg\u0142oszonych \u0142adunk\xF3w\nwybuchowych."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289357803126784
+    m_Localized: "Najwa\u017Cniejsze to zachowa\u0107 spok\xF3j.\nMasz 50/50 szansy
+      powodzenia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289373397549056
+    m_Localized: 'TIC TAC TIC TAC
+
+      TIC TAC TIC TAC
+
+      TIC TAC TIC TAC'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289387196809216
+    m_Localized: "Jeste\u015B pewien, \u017Ce masz teraz czas na\nciekawostki? Przed
+      tob\u0105 jest prawdziwa\nbomba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289399184130048
+    m_Localized: "Bomba zosta\u0142a rozbrojona.\nDET wygra\u0142o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289413285380096
+    m_Localized: "Kilkana\u015Bcie lat temu, kiedy ataki si\u0119 sko\u0144czy\u0142y.\nCz\u0119\u015B\u0107
+      os\xF3b chcia\u0142a rozwi\u0105zania DET. Traktuj\u0105c\nnas jako ju\u017C
+      niepotrzebnych. Mylili si\u0119."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36289428724613120
+    m_Localized: "Pami\u0119taj!\nDET jest przy tobie,\nDET ci\u0119 wspiera,\nDET
+      to bohater."
     m_Metadata:
       m_Items: []
   references:
