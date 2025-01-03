@@ -8,6 +8,7 @@ public class WiresModule : Module
 {
     [SerializeField] private GameObject wirePrefab;
     [SerializeField] private GameObject wiresSection;
+    [SerializeField] private AudioEmiter audioEmiter;
     private List<WireScript> wireList = new List<WireScript>();
     private Color[] colorsList = new Color[6] { Color.red, new Color(1.0f, 0.64f, 0.0f), Color.yellow, Color.green, Color.blue, new Color(143, 0, 254) };
     private void RenderWires()
@@ -30,9 +31,14 @@ public class WiresModule : Module
     public void CheckWires(WireScript ws)
     {
         if(active)return;
-        if (wireList[0] != ws)Bomb.instance.Detonate();
+        if (wireList[0] != ws)
+        {
+            Bomb.instance.Detonate();
+            return;
+        }
 
         wireList.Remove(ws);
+        audioEmiter.PlayRandomClip();
         if (wireList.Count<=0)
         {
             active = true;

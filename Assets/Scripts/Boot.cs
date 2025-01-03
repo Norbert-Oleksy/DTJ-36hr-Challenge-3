@@ -7,6 +7,7 @@ public class Boot : MonoBehaviour
 {
     #region Fields
     [SerializeField] private DataManager dataManager;
+    [SerializeField] private AudioManager audioManager;
     //[SerializeField] private animatior
     [SerializeField] private float introTime;
     #endregion
@@ -21,7 +22,9 @@ public class Boot : MonoBehaviour
 
     private IEnumerator BootProces()
     {
-        dataManager.Initialization(()=> SetDataAsLoaded());
+        dataManager.Initialization(()=> {
+            audioManager.Initialization(() => SetDataAsLoaded());
+        });
         yield return new WaitForSeconds(introTime);
         yield return new WaitUntil(()=>dataLoaded);
         LoadMainMenu();

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +7,10 @@ public class PushUPModule : Module
     [SerializeField] private Slider slider;
     [SerializeField] private Color orangeColor;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioEmiterUp;
+    [SerializeField] private AudioSource audioEmiterDown;
+
     private float procentage;
     private float bestValue;
 
@@ -17,12 +19,15 @@ public class PushUPModule : Module
     {
         if(active) return;
 
-        if(value == 0 && bestValue > 0)
+        if (value == 0 && bestValue > 0)
         {
             procentage = procentage + (bestValue / 20);
             bestValue = 0;
 
-            if(procentage >= 1.0f)
+            if (audioEmiterUp.isPlaying) audioEmiterUp.Stop();
+            if (!audioEmiterDown.isPlaying) audioEmiterDown.Play();
+
+            if (procentage >= 1.0f)
             {
                 progresBar.fillAmount = 1.0f;
                 progresBar.color = Color.green;
@@ -40,6 +45,9 @@ public class PushUPModule : Module
         else if(value > bestValue)
         {
             bestValue = value;
+
+            if (audioEmiterDown.isPlaying) audioEmiterDown.Stop();
+            if (!audioEmiterUp.isPlaying) audioEmiterUp.Play();
         } 
     }
 

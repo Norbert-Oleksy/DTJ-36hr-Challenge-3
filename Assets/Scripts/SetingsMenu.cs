@@ -27,12 +27,14 @@ public class SetingsMenu : MonoBehaviour
     public void UpdateMusicValue(float value)
     {
         DataManager.instance.musicLevel = value;
+        AudioManager.instance.SetVolume("MusicGroupParam", value);
         musicValueDisplay.text = (int)(value*100)+"%";
     }
 
     public void UpdateSoundValue(float value)
     {
         DataManager.instance.soundLevel = value;
+        AudioManager.instance.SetVolume("SoundsGroupParam", value);
         soundValueDisplay.text = (int)(value * 100) + "%";
     }
     #endregion
