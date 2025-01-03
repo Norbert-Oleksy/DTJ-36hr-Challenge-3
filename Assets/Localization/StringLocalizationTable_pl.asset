@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5226245095424
-    m_Localized: "G\u0142o\u015Bno\u015B\u0107 gry"
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 d\u017Awi\u0119ku"
     m_Metadata:
       m_Items: []
   - m_Id: 8844897648640
@@ -80,6 +80,20 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8683575960109056
     m_Localized: "G\u0142\xF3wne Menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56943960697569280
+    m_Localized: 'AUTOR
+
+      Norbert Oleksy'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56951654867238912
+    m_Localized: OPIS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56952014692384768
+    m_Localized: "Gra powsta\u0142na specjalnie na Devs That Jam 36hr Challenge #3."
     m_Metadata:
       m_Items: []
   references:

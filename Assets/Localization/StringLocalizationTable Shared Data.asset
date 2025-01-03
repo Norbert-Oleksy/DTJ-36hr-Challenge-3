@@ -79,6 +79,18 @@ MonoBehaviour:
     m_Key: BTN_MainMenu
     m_Metadata:
       m_Items: []
+  - m_Id: 56943960697569280
+    m_Key: INFO_Author
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56951654867238912
+    m_Key: INFO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56952014692384768
+    m_Key: INFO_Description_Content
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
