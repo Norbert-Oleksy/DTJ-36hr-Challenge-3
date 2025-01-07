@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 public class Boot : MonoBehaviour
@@ -27,6 +28,7 @@ public class Boot : MonoBehaviour
         });
         yield return new WaitForSeconds(introTime);
         yield return new WaitUntil(()=>dataLoaded);
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[DataManager.instance.languageId];
         LoadMainMenu();
         yield return null;
     }

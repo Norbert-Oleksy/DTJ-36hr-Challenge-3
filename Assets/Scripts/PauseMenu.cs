@@ -64,6 +64,7 @@ public class PauseMenu : MonoBehaviour
         {
             animator.Play("UnFlipAPhone");
             optionsMenu.SetActive(false);
+            DataManager.instance.SaveData();
         }
 
         StartCoroutine(DoAfterDelay(() => {

@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
@@ -102,10 +101,5 @@ public class PhoneMenu : MonoBehaviour
                 OpenCloseInfoMenu(false);
             }
         }
-    }
-
-    private void Awake()
-    {
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[DataManager.instance.languageId];
     }
 }
