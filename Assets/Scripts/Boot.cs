@@ -28,7 +28,7 @@ public class Boot : MonoBehaviour
         });
         //yield return new WaitForSeconds(introTime);
         yield return new WaitUntil(()=>dataLoaded);
-        yield return new WaitUntil(() => LocalizationSettings.InitializationOperation.WaitForCompletion());
+        yield return new WaitUntil(() => LocalizationSettings.InitializationOperation.IsDone);
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[DataManager.instance.languageId];
         LoadMainMenu();
         yield return null;
