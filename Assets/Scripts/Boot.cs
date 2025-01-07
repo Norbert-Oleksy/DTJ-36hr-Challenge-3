@@ -26,8 +26,9 @@ public class Boot : MonoBehaviour
         dataManager.Initialization(()=> {
             audioManager.Initialization(() => SetDataAsLoaded());
         });
-        yield return new WaitForSeconds(introTime);
+        //yield return new WaitForSeconds(introTime);
         yield return new WaitUntil(()=>dataLoaded);
+        yield return new WaitUntil(() => LocalizationSettings.InitializationOperation.WaitForCompletion());
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[DataManager.instance.languageId];
         LoadMainMenu();
         yield return null;
