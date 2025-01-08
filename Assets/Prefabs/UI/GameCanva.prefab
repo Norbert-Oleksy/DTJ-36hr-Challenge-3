@@ -5635,7 +5635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 740, y: -350}
+  m_AnchoredPosition: {x: 740, y: -320}
   m_SizeDelta: {x: 1480, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6658143524825472039
@@ -6276,7 +6276,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5373733927290107300}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
@@ -6317,7 +6317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &679989234375368133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8193,7 +8193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 740, y: -600}
+  m_AnchoredPosition: {x: 740, y: -540}
   m_SizeDelta: {x: 1480, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5626600196487435518
@@ -8643,7 +8643,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 700}
+  m_SizeDelta: {x: 0, y: 640}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3580620647220455913
 MonoBehaviour:
@@ -8666,7 +8666,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 1480, y: 200}
-  m_Spacing: {x: 0, y: 50}
+  m_Spacing: {x: 0, y: 20}
   m_Constraint: 1
   m_ConstraintCount: 1
 --- !u!114 &2479997432827508065
@@ -9347,6 +9347,7 @@ MonoBehaviour:
   phoneObject: {fileID: 5332765364257645805}
   explosionEmiter: {fileID: 9125536539510776373}
   audioClip: {fileID: 8300000, guid: 70f0c569f9c1dca468b63033a3d818e2, type: 3}
+  musicEmiter: {fileID: 0}
   stage: 0
 --- !u!82 &9125536539510776373
 AudioSource:
