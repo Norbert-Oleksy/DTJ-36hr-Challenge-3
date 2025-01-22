@@ -49,8 +49,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 68139794268160
-    m_Localized: "Witaj w aplikacji DET\nCieszymy si\u0119, \u017Ce mo\u017Cemy\nci
-      s\u0142u\u017Cy\u0107 pomoc\u0105!"
+    m_Localized: "Witaj w aplikacji DET\nCieszymy si\u0119, \u017Ce mo\u017Cemy ci
+      s\u0142u\u017Cy\u0107 pomoc\u0105!\nU\u017Cyj opcji skanowania, by uzyskoa\u0107
+      potrzebna\ninformacje o danej cz\u0119\u015Bci bomby."
     m_Metadata:
       m_Items: []
   - m_Id: 36287930401783808

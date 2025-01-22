@@ -66,10 +66,13 @@ MonoBehaviour:
   - m_Id: 68139794268160
     m_Localized: 'Welcome to the DET app
 
-      We are happy to be of service
+      We are happy to be of service to
+      you!
 
-      to
-      you!'
+      Use the scan option to get the necessary
+
+      information about
+      a specific part of the bomb.'
     m_Metadata:
       m_Items: []
   - m_Id: 36287930401783808

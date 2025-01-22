@@ -11194,7 +11194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 642029817731076264, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 227.84
+      value: 390.68
       objectReference: {fileID: 0}
     - target: {fileID: 642029817731076264, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_SizeDelta.y
@@ -11252,6 +11252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MsgPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1386032572159831168, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3359737443715491392, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11282,8 +11286,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7665799195910209274, guid: a7b470249fc1c764999aef7499a5d786, type: 3}
       propertyPath: m_text
-      value: "Witaj w aplikacji DET\nCieszymy si\u0119, \u017Ce mo\u017Cemy\nci s\u0142u\u017Cy\u0107
-        pomoc\u0105!"
+      value: "Witaj w aplikacji DET\nCieszymy si\u0119, \u017Ce mo\u017Cemy ci s\u0142u\u017Cy\u0107
+        pomoc\u0105!\nU\u017Cyj opcji skanowania, by uzyskoa\u0107 potrzebna\ninformacje
+        o danej cz\u0119\u015Bci bomby."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
