@@ -109,6 +109,11 @@ MonoBehaviour:
       to bohater."
     m_Metadata:
       m_Items: []
+  - m_Id: 64093670218960896
+    m_Localized: "Dziwne, wygl\u0105da jak ta stara gra.\nSpr\xF3buj uderzy\u0107
+      wyskakuj\u0105cy element.\nZobaczymy, co si\u0119 stanie."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -162,6 +162,15 @@ MonoBehaviour:
       is a hero.'
     m_Metadata:
       m_Items: []
+  - m_Id: 64093670218960896
+    m_Localized: 'Strange, it looks like that old game.
+
+      Try hitting the popping
+      element.
+
+      Let''s see what happens.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

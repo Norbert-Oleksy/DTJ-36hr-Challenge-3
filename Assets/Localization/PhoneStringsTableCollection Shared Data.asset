@@ -83,6 +83,10 @@ MonoBehaviour:
     m_Key: MSG_FF-10
     m_Metadata:
       m_Items: []
+  - m_Id: 64093670218960896
+    m_Key: MIID_WAMole
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
