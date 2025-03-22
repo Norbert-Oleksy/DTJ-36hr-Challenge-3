@@ -31,6 +31,7 @@ public class CircleModule : Module
     private void Update()
     {
         if(active) return;
+        if (GameManager.instance.stage != GameManager.gamestage.Game) return;
 
         RotateFragments();
 
@@ -64,6 +65,7 @@ public class CircleModule : Module
             active = true;
             _circleOne.rotation = _circleThree.rotation;
             _circleTwo.rotation = _circleThree.rotation;
+            Bomb.instance.CheckIfBombIsDefused();
         }
     }
 

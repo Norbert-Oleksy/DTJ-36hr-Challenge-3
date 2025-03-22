@@ -10,10 +10,10 @@ public class WiresModule : Module
     [SerializeField] private GameObject wiresSection;
     [SerializeField] private AudioEmiter audioEmiter;
     private List<WireScript> wireList = new List<WireScript>();
-    private Color[] colorsList = new Color[6] { Color.red, new Color(1.0f, 0.64f, 0.0f), Color.yellow, Color.green, Color.blue, new Color(143, 0, 254) };
+    private Color[] colorsList = new Color[4] { Color.red, Color.yellow, Color.green, Color.blue};
     private void RenderWires()
     {
-        for (int i = 0; i < DataManager.instance.difficulty * 2; i++)
+        for (int i = 0; i < 4; i++)
         {
             GameObject newObject = Instantiate(wirePrefab, Vector3.zero, Quaternion.identity);
             newObject.transform.SetParent(wiresSection.transform);

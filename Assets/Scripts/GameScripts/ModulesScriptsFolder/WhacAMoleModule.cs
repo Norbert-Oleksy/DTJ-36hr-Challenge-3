@@ -14,7 +14,7 @@ public class WhacAMoleModule : Module
 
     #region Variables
     private int score;
-    private int targetScore;
+    private int targetScore = 100;
     #endregion
 
     #region Logic
@@ -32,7 +32,6 @@ public class WhacAMoleModule : Module
     private void Initialization()
     {
         score = 0;
-        targetScore = 50 + 50 * DataManager.instance.difficulty;
         UpdateScoreText();
         StartCoroutine(ModuleLogic());
     }
@@ -52,7 +51,7 @@ public class WhacAMoleModule : Module
         {
             StartCoroutine(PopUpTarget(_buttons.FindAll(b => !b.interactable)));
             yield return new WaitForSeconds(lifeTime);
-            if(GameManager.instance.stage != GameManager.gamestage.Game) yield return null;
+            yield return new WaitWhile(() => GameManager.instance.stage != GameManager.gamestage.Game);
         }
         yield return null;
     }
@@ -64,6 +63,7 @@ public class WhacAMoleModule : Module
         Button target = buttons[Random.Range(0, buttons.Count)];
         target.interactable = true;
         yield return new WaitForSeconds(lifeTime);
+        yield return new WaitWhile(() => GameManager.instance.stage != GameManager.gamestage.Game);
         target.interactable = false;
         yield return null;
     }
