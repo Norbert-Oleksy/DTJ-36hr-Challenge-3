@@ -171,6 +171,18 @@ MonoBehaviour:
       Let''s see what happens.'
     m_Metadata:
       m_Items: []
+  - m_Id: 67047524241805312
+    m_Localized: 'The scan indicates that this is a circuit board.
+
+      Pay attention
+      to the routed traces.
+
+      They are used to transmit the signal.
+
+      Arrange
+      them into the correct pattern.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

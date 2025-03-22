@@ -1,9 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using System.Linq;
 
 public class Bomb : MonoBehaviour
 {
@@ -81,23 +79,36 @@ public class Bomb : MonoBehaviour
         modules = new List<Module>();
         List<GameObject> slots = new List<GameObject>(moduleSlots);
         int numberOfModules = GetNumberOfModules();
+
+        //Only 1 module for hard mode
         if (numberOfModules >= 5) {
             numberOfModules--;
             PlaceModule(modulesList.hardModules[Random.Range(0, modulesList.hardModules.Count)], slots);
         }
 
-        if(numberOfModules >= 3)
+        int index;
+
+        // 1 or 2 for normal and hard
+        if (numberOfModules >= 3)
         {
-            int variable = (numberOfModules - 3 < 2) ? 1 : 2;
+            int variable = (numberOfModules - 3 < 2) ? 1 : Random.Range(1,3);
             numberOfModules -= variable;
-            for(int i = 0; i < variable; i++) 
+            List<GameObject> listImpediments = new List<GameObject>(modulesList.impediments);
+            
+            for (int i = 0; i < variable; i++)
             {
-                PlaceModule(modulesList.impediments[Random.Range(0, modulesList.impediments.Count)], slots);
+                index = Random.Range(0, listImpediments.Count);
+                PlaceModule(listImpediments[index], slots);
+                listImpediments.RemoveAt(index);
             }
         }
 
+        List<GameObject> listBasic = new List<GameObject>(modulesList.basic);
+        // 1 or 2 for easy mode, 2 or 4 for normal and hard
         for (int i = 0; i < numberOfModules; i++) {
-            PlaceModule(modulesList.basic[Random.Range(0, modulesList.basic.Count)], slots);
+            index = Random.Range(0, listBasic.Count);
+            PlaceModule(listBasic[index], slots);
+            listBasic.RemoveAt(index);
         }
         GameManager.instance.stage = GameManager.gamestage.Game;
     }

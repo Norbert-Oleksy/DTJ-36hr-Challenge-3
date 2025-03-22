@@ -114,6 +114,12 @@ MonoBehaviour:
       wyskakuj\u0105cy element.\nZobaczymy, co si\u0119 stanie."
     m_Metadata:
       m_Items: []
+  - m_Id: 67047524241805312
+    m_Localized: "Skan wykazuje, \u017Ce to p\u0142ytka elektroniczna.\nZwr\xF3\u0107
+      uwag\u0119 na poprowadzone \u015Bcie\u017Cki.\nTo nimi przesy\u0142any jest
+      sygna\u0142.\nSpraw, aby u\u0142o\u017Cy\u0142y si\u0119 w poprawny wz\xF3r."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
