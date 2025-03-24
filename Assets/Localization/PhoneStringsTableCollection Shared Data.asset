@@ -91,6 +91,10 @@ MonoBehaviour:
     m_Key: MIID_Circle
     m_Metadata:
       m_Items: []
+  - m_Id: 67826619682689024
+    m_Key: MIID_Adventure
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

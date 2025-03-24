@@ -120,6 +120,12 @@ MonoBehaviour:
       sygna\u0142.\nSpraw, aby u\u0142o\u017Cy\u0142y si\u0119 w poprawny wz\xF3r."
     m_Metadata:
       m_Items: []
+  - m_Id: 67826619682689024
+    m_Localized: "Elektroniczny System Zabezpieczaj\u0105cy\nNa ekranie wy\u015Bwietlane
+      s\u0105 elementy klucza.\nU\u017Cyj przycisk\xF3w, aby po\u0142\u0105czy\u0107
+      je w ci\u0105g."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
