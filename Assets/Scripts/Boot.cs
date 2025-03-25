@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
@@ -16,7 +15,7 @@ public class Boot : MonoBehaviour
     private bool dataLoaded = false;
 
     #region LogicRegion
-    private void Awake()
+    private void Start()
     {
         StartCoroutine(BootProces());
     }

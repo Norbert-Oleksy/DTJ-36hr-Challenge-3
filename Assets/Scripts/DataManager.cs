@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DataManager : MonoBehaviour
@@ -11,11 +9,6 @@ public class DataManager : MonoBehaviour
     #region Methods
     public void Initialization(Action endAction=null)
     {
-        if(instance != null && instance != this) return;
-
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
-
         musicLevel = PlayerPrefs.GetFloat("musicLevel", 0.8f);
         soundLevel = PlayerPrefs.GetFloat("soundLevel", 0.8f);
         languageId = PlayerPrefs.GetInt("chosenLanguage", 0);
@@ -36,5 +29,14 @@ public class DataManager : MonoBehaviour
     public float soundLevel;
     public float musicLevel;
     public int languageId;
+    #endregion
+
+    #region Unity-API
+    private void Awake()
+    {
+        if (instance != null && instance != this) return;
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
+    }
     #endregion
 }

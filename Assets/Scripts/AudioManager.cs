@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.Rendering;
 using System;
 
 public class AudioManager : MonoBehaviour
@@ -24,16 +21,19 @@ public class AudioManager : MonoBehaviour
 
     public void Initialization(Action endAction = null)
     {
-        if (instance != null && instance != this) return;
-
-        DontDestroyOnLoad(this.gameObject);
-
-        instance = this;
-
         SetVolume("MusicGroupParam", DataManager.instance.musicLevel);
         SetVolume("SoundsGroupParam", DataManager.instance.soundLevel);
 
         endAction?.Invoke();
+    }
+    #endregion
+
+    #region Unity-API
+    private void Awake()
+    {
+        if (instance != null && instance != this) return;
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
     #endregion
 }

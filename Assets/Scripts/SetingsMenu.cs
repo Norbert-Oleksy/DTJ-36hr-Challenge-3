@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -43,7 +41,9 @@ public class SetingsMenu : MonoBehaviour
     private void Awake()
     {
         musicSlide.value = DataManager.instance.musicLevel;
+        musicValueDisplay.text = (int)(musicSlide.value * 100) + "%";
         soundSlide.value = DataManager.instance.soundLevel;
+        soundValueDisplay.text = (int)(soundSlide.value * 100) + "%";
     }
     #endregion
 }
