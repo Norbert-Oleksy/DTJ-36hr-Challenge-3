@@ -192,6 +192,11 @@ MonoBehaviour:
       Use the buttons to connect them into a sequence.'
     m_Metadata:
       m_Items: []
+  - m_Id: 68048219212386304
+    m_Localized: "Strong electromagnetic interference detected.\nThe module generates
+      a field that disrupts visibility.\nImpact on safety \u2013 unknown."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -126,6 +126,12 @@ MonoBehaviour:
       je w ci\u0105g."
     m_Metadata:
       m_Items: []
+  - m_Id: 68048219212386304
+    m_Localized: "Wykryto silne zak\u0142\xF3cenia elektromagnetyczne.\nModu\u0142
+      generuje pole, kt\xF3re zak\u0142\xF3ca widoczno\u015B\u0107.\nWp\u0142yw na
+      bezpiecze\u0144stwo \u2013 nieznany."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

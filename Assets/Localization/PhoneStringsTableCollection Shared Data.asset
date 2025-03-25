@@ -95,6 +95,10 @@ MonoBehaviour:
     m_Key: MIID_Adventure
     m_Metadata:
       m_Items: []
+  - m_Id: 68048219212386304
+    m_Key: MIID_Shock
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
