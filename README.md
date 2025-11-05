@@ -1,4 +1,4 @@
-# PathfindingExample
+# DESCRIPTION
 >Do you recognize this situation?<br>
 >You're walking calmly, thinking about your own matters.<br>
 >And suddenly, an object appears in your field of vision. <br>
